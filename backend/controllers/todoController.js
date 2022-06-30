@@ -51,7 +51,7 @@ const updateTask = async (req, res) => {
       new: true,
     });
 
-    res.status(200).json(updatedTask);
+    res.status(200).json({message: "Task updated", updatedTask});
   } catch (err) {
     res.status(500);
   }

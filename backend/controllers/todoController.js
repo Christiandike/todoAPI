@@ -1,7 +1,7 @@
 const Tasks = require("../models/Tasks");
 
 // @desc Get tasks
-// @route GET /todos
+// @route GET todos/
 const getTasks = async (req, res) => {
   try {
     const task = await Tasks.find();
@@ -16,7 +16,7 @@ const getTasks = async (req, res) => {
 };
 
 // @desc add tasks
-// @route POST /todos
+// @route POST todos/
 const addTask = async (req, res) => {
   try {
     const createdTask = await Tasks.create(req.body);
@@ -36,7 +36,7 @@ const addTask = async (req, res) => {
 };
 
 // @desc Update tasks
-// @route PUT /todos/:id
+// @route PUT todos/:id
 const updateTask = async (req, res) => {
   try {
     const task = await Tasks.findById(req.params.id);
@@ -58,7 +58,7 @@ const updateTask = async (req, res) => {
 };
 
 // @desc Delete tasks
-// @route DELETE /todos/:id
+// @route DELETE todos/:id
 const deleteTask = async (req, res) => {
   try {
     const task = await Tasks.findById(req.params.id);

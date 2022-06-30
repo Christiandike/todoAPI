@@ -1,3 +1,5 @@
+//this middleware handles 404 and 500 status errors only. To avoid repetition throughout the code base
+
 const errorHandler = (err, req, res, next) => {
   const statusCode = res.statusCode;
   if (statusCode === 404) {

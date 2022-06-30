@@ -1,2 +1,1 @@
-Boilerplate template for nodejs consisting of
-Mongoose and express as dependencies, and dotenv and nodemon as dev dependencies. Also, with preorganized file/directory structure.
+A mongoDB connection set up in a Node.js server to perform CRUD operations for a Todo API.
